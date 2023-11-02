@@ -181,9 +181,11 @@ export function Admin() {
                     <article 
                     key={link.id}
                     className="flex items-center justify-between max-w-2xl w-11/12 py-3 px-2 mb-2 rounded select-none" 
-                    style={{backgroundColor: link.bg, color: link.color, padding: 12, display: "flex", alignItems: "center"}}
+                    style={{backgroundColor: link.bg, padding: 12, display: "flex", alignItems: "center"}}
                 >
-                    <p>{link.name}</p>
+                    <p
+                        style={{color: link.color}}
+                    >{link.name}</p>
                     <div>
                         <button
                             className="border border-dashed p-1 rounded bg-black"
